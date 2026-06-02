@@ -1,0 +1,24 @@
+table {
+	display: inline-table;
+}
+table,
+th,
+td,
+caption {
+	border: 1px solid black;
+	border-spacing: 0;
+	border-collapse: collapse;
+	min-width: 25px;
+	font-family: sans-serif;
+	text-align: center;
+}
+table {
+	margin: 20px;
+}
+.text {
+	font-weight: bold;
+	border-bottom: none;
+}
+.red {
+	color: red;
+}
