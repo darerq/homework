@@ -1,0 +1,33 @@
+html {
+	font-family: sans-serif;
+}
+* body {
+	box-sizing: border-box;
+}
+.container {
+	margin: 0 auto;
+	padding: 40px;
+	padding-bottom: 20px;
+	min-height: 0.5vb;
+	max-width: 1320px;
+	border-bottom: solid 1px #727272;
+}
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.link {
+	display: inline;
+	padding: 0 10px;
+}
+.black {
+	color: black;
+	font-family: sans-serif;
+	font-weight: 500;
+}
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
