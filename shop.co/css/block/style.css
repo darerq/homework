@@ -1,0 +1,125 @@
+.style {
+	padding-inline: 100px;
+	padding-bottom: 80px;
+}
+
+.style__container {
+	padding-inline: 200px;
+	padding-top: 70px;
+	padding-bottom: 76px;
+	background-color: var(--search-color);
+	border-radius: 40px;
+}
+
+.style__title {
+	font-weight: 900;
+	font-size: 48px;
+	text-align: center;
+	color: #000;
+	font-family: var(--second-family);
+}
+
+.style__grid {
+	max-width: 1600px;
+	display: grid;
+	grid-template-areas:
+		"free men men"
+		"women women sport";
+	gap: 20px;
+	justify-content: center;
+	padding-top: 64px;
+}
+
+.grid-item {
+	max-height: 350px;
+	position: relative;
+}
+
+.grid-img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.grid-item p {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-weight: 700;
+	font-size: 30px;
+	color: #000;
+}
+
+.grid-item:nth-child(1) {
+	grid-area: free;
+}
+
+.grid-item:nth-child(2) {
+	grid-area: men;
+}
+
+.grid-item:nth-child(3) {
+	grid-area: women;
+}
+
+.grid-item:nth-child(4) {
+	grid-area: sport;
+}
+
+@media (width <= 1440px) {
+	.style__container {
+		padding-inline: 64px;
+		padding-bottom: 50px;
+	}
+	.grid-item p {
+		font-size: 24px;
+	}
+}
+@media (width <= 992px) {
+	.style {
+		padding-inline: 16px;
+		padding-bottom: 50px;
+	}
+
+	.style__container {
+		padding-inline: 19px;
+		padding-top: 40px;
+		padding-bottom: 27px;
+	}
+	.grid-item p {
+		top: 16px;
+		left: 24px;
+	}
+}
+
+@media (width <= 768px) {
+	.style__container {
+		padding-inline: 16px;
+		padding-top: 40px;
+		padding-bottom: 32px;
+		border-radius: 16px;
+	}
+	.style__title {
+		font-size: 26px;
+	}
+	.style__grid {
+		grid-template-areas:
+			"free"
+			"men"
+			"women"
+			"sport";
+		gap: 16px;
+		padding-top: 28px;
+	}
+	.grid-item {
+		max-height: 400px;
+		aspect-ratio: 375 / 300;
+	}
+
+	.grid-item p {
+		font-size: 24px;
+		top: 16px;
+		left: 16px;
+	}
+}
